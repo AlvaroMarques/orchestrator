@@ -1,5 +1,8 @@
+from orchestrator.cli import app
+
+
 def main():
-    print("Hello from orchestrator!")
+    app()
 
 
 if __name__ == "__main__":

@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "apache-airflow>=3.1.5",
+    "black>=25.12.0",
+]
+
+[project.scripts]
+orchestrator="orchestrator.__main__:main"
