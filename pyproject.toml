@@ -6,9 +6,17 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "black>=25.12.0",
+    "dagster>=1.12.10",
+    "dagster-dg>=0.1.6",
+    "dagster-webserver>=1.12.10",
     "graphviz>=0.21",
     "pytest>=9.0.2",
+    "typer>=0.21.1",
 ]
 
 [project.scripts]
 orchestrator="orchestrator.__main__:main"
+
+[tool.dagster]
+module_name = "orchestrator.jobs"
+attribute = "defs"
